@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count CRUD</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+</head>
+
+<link rel="stylesheet" href="./styles.css">
+<body>
+    <h1>Word Count CRUD</h1>
+
+    <form id="wordCountForm">
+        <label for="urlInput">Website URL:</label>
+        <input type="text" id="urlInput" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <table id="wordCountTable">
+        <thead>
+            <tr>
+                <th>Website URL</th>
+                <th>Word Count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Update Modal -->
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Website URL</h2>
+            <input type="text" id="updatedUrlInput" required>
+            <button id="updateButton">Update</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./script.js"></script>
