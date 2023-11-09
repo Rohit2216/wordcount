@@ -2,6 +2,10 @@
 
 Word Count for URLs is a web application that allows users to check the word count of any website or webpage by providing its URL. It fetches the content of the URL, counts the words, and displays the result to the user.
 
+[Frontend_Link](https://wordcount-kiymxfuvy-rohit2216.vercel.app/)
+
+[Backend_Link](https://word-1miz.onrender.com)
+
 ## Table of Contents
 
 - [Installation](#installation)
