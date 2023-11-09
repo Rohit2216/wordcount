@@ -9,7 +9,9 @@ app.use(cors())
 
 app.use(bodyParser.json());
 
-
+app.use("/",(req,res)=>{
+    res.status(201).send({msg:"welcome to Dashboard!"})
+})
 app.use("/api",urlRoutes)
 
 app.listen(process.env.port, async(req,res) => {
