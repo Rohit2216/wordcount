@@ -6,7 +6,7 @@ const updateButton = document.getElementById('updateButton');
 
 async function fetchData() {
 try {
-const response = await fetch('https://busy-pear-agouti-gown.cyclic.app/api/wordcount');
+const response = await fetch('https://word-1miz.onrender.com/api/wordcount');
 const data = await response.json();
 tableBody.innerHTML = '';
 data.forEach(item => {
@@ -31,7 +31,7 @@ form.addEventListener('submit', async function (event) {
     event.preventDefault();
     const url = document.getElementById('urlInput').value;
     try {
-        await fetch('https://busy-pear-agouti-gown.cyclic.app/api/wordcount', {
+        await fetch('https://word-1miz.onrender.com/api/wordcount', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ async function editWordCount(id, url) {
         }
 
         try {
-            await fetch(`https://busy-pear-agouti-gown.cyclic.app/api/wordcount/${id}`, {
+            await fetch(`https://word-1miz.onrender.com/api/wordcount/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ async function deleteWordCount(id) {
     const confirmDelete = confirm('Are you sure you want to delete this entry?');
     if (confirmDelete) {
         try {
-            await fetch(`https://busy-pear-agouti-gown.cyclic.app/api/wordcount/${id}`, {
+            await fetch(`https://word-1miz.onrender.com/api/wordcount/${id}`, {
                 method: 'DELETE'
             });
             fetchData();

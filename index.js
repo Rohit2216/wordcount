@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 
 app.use(express.json())
-app.use("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.status(201).send({msg:"welcome to Dashboard!"})
 })
 app.use("/api",urlRoutes)
